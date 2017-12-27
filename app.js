@@ -11,10 +11,13 @@ var a = lista.indexOf('lisa')+1;
 console.log(a)
 
 
+/*EJERCICIO 12
+Realizar un programa que permita analizar si una palabra que el usuario introduce por teclado es palíndroma o no.
+Si es palíndroma debe retornar true, en caso contrario false.
+*/
 
 
-
-/*Establecemos la funcion*/
+//Establecemos la funcion*/
 function esPalindromo(str){
   //ponemos las condiciones para que retorne false or true
     if(str.length === 0) { return true;}
