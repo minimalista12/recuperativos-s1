@@ -36,16 +36,8 @@ Realizar un programa que permita analizar si una palabra que el usuario introduc
 Si es palíndroma debe retornar true, en caso contrario false.
 */
 
-//Establecemos la funcion*/
-function esPalindromo(str){
-  //ponemos las condiciones para que retorne false or true
-    if(str.length === 0) { return true;}
-    if(str[0] !== str[str.length-1]){ return false;}
-    //establecemos la funcion para que recorra la palabra y determine si es palindromo o no 
-    return esPalindromo(str.slice(1,str.length-1));
-}
-//Deberia retornar "false"
-console.log(esPalindromo("palindromo"));
+
+
 
 
 
@@ -55,30 +47,28 @@ Dado dos string (palabra1 y palabra2) escribir una función para determinar si p
 Si es anagrama debe retornar true, en caso contrario false.
 */
 
- function esAnagrama (palabra1, palabra2) {
-    
-     if (palabra1.length !== palabra2.length) {
-        return false;    
-    }
-    
-    // 
-    var contador1 = {};
-    Array.prototype.forEach.call(palabra1, function(ch) {
-        contador1[ch] = contador1[ch] ? 1 + contador1[ch] : 1;
-    });
+//establecemos la funcion con 2 palabras a comparar 
+function ordenapalabras (str1, str2) {
+  
+  //primero con split dividimos la primera palabra elegida en letras individuales, segundo con sort ordenamos las letras alfabeticamente y tercero con join volvemos a juntar las letras ya ordenadas 
+  var palabra1 = str1.split('').sort().join('');
+  
+  //Repetimos las 3 acciones con la segunda palabra
+  var palabra2 = str2.split('').sort().join('');
 
-    // 
-    var contador2 = palabra2.length;
-    for (var i = 0; i < contador2; i++) {
-        if(!contador1[palabra2[i]]) {
-            return false;
-        } else {
-            contador1[palabra2[i]] -= 1;
-        }
-    }
-    return true;
-}
-//Deberia retornar 'true'
-console.log(esAnagrama('amar','rama')); 
+  //luego comparamos lo que quedo de la primera palabra con lo que quedo de la segunda palabra 
+  if (palabra1 === palabra2) {
+    
+    // si es exctameente igual debe retornar 'verdadero'
+    return "verdadero";
+  } else {
+    
+    // de lo contrario retorna 'falso'
+    return "falso";
+  }
+  }
+//en caso de rama y arma debe retornar verdadero 
+console.log(ordenapalabras("rama", "arma"));
+
 
 
