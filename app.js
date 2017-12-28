@@ -1,6 +1,6 @@
 /*EJERCICIO 8 
-
 Dado un arreglo y un número, retornar el índice (posición) del número.
+
 */
 //Definimos el array con distintos elementos 
 var listaNumeros = [10,20,30,40,50];
@@ -14,10 +14,8 @@ console.log(indice)
 
 
 /*EJERCICIO 10
-
-Diseñar un programa que lea las calificaciones de un alumno (10 notas en total). Debes calcular e imprimir 
-su promedio, y decir a través de un alert si el ramo fue aprobado o no. Las notas van de 1 a 7 y se aprueba 
-con un promedio igual o mayor a 4. 
+Un grupos de amigos van a un evento y sus nombres están dentro de un arreglo. 
+Escribir una función donde dado el nombre de la persona puedas retornar el asiento que le toca. La numeración comienza en 1, si la persona no tiene asiento retornar 0.
 
 */
 
@@ -30,10 +28,14 @@ con un promedio igual o mayor a 4.
 //Deberia retornar 2
 console.log(a)
 
-/*EJERCICIO 11
 
-Escribe una funcion donde dado el nombre de la persona pueda retornar el numero de asiento que le corresponde. 
-Si la personas no esta en la lista o no tiene asiento, retornar "0"
+
+
+/*EJERCICIO 11
+Diseñar un programa que lea las calificaciones de un alumno (10 notas en total). Debes calcular e imprimir 
+su promedio, y decir a través de un alert si el ramo fue aprobado o no. Las notas van de 1 a 7 y se aprueba 
+con un promedio igual o mayor a 4. 
+
 */
 
 
