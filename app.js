@@ -15,8 +15,10 @@ console.log(indice)
 
 /*EJERCICIO 10
 
-Escribe una funcion donde dado el nombre de la persona pueda retornar el numero de asiento que le corresponde. 
-Si la personas no esta en la lista o no tiene asiento, retornar "0"
+Diseñar un programa que lea las calificaciones de un alumno (10 notas en total). Debes calcular e imprimir 
+su promedio, y decir a través de un alert si el ramo fue aprobado o no. Las notas van de 1 a 7 y se aprueba 
+con un promedio igual o mayor a 4. 
+
 */
 
 //Ingresamos el array con distintos elementos 
@@ -27,6 +29,15 @@ Si la personas no esta en la lista o no tiene asiento, retornar "0"
 
 //Deberia retornar 2
 console.log(a)
+
+/*EJERCICIO 11
+
+Escribe una funcion donde dado el nombre de la persona pueda retornar el numero de asiento que le corresponde. 
+Si la personas no esta en la lista o no tiene asiento, retornar "0"
+*/
+
+
+
 
 
 
