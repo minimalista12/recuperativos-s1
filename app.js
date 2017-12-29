@@ -47,18 +47,18 @@ Si es palíndroma debe retornar true, en caso contrario false.
 */
 
 function esPalindromo(palabra) {
-    //Tomamos la palabra orginal con split separamos las letras, con reverse ordenamos las letras al reves 
-   //(de atras para adelante)  y luego con join volvemos a juntar todas las letras ya ordenadas al reves 
-		var alReves = palabra.split('').reverse().join('');
-		//Ahora comprobamos si el resultado de estas 3 acciones quedo igual a la palabra original 
-		if (palabra === alReves) {
-		  // si es igual retorna 'true'
-			return true;
-		}else {
-		  //si no es gual retorna 'false'
-			return false;	
-		}
-	}
+  //Tomamos la palabra orginal con split separamos las letras, con reverse ordenamos las letras al reves 
+  //(de atras para adelante)  y luego con join volvemos a juntar todas las letras ya ordenadas al reves 
+   var alReves = palabra.split('').reverse().join('');
+   //Ahora comprobamos si el resultado de estas 3 acciones quedo igual a la palabra original 
+    if (palabra === alReves) {
+   // si es igual retorna 'true'
+    return true;
+    }else {
+    //si no es gual retorna 'false'
+     return false;	
+         }
+     }
 	
 esPalindromo("reconocer")
 
